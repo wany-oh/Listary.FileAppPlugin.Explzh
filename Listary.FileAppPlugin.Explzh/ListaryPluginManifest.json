@@ -1,0 +1,16 @@
+﻿{
+  "ManifestVersion": 1,
+
+  "Id": "Explzh",
+  "PluginType": "FileAppPlugin",
+  "PluginVersion": "0.1.0",
+  "DisplayName": "Explzh",
+  "Authors": [ "wany-oh" ],
+  "Description": "Listary file application plugin for Explzh.",
+  "Homepage": "https://github.com/wany-oh/Listary.FileAppPlugin.Explzh",
+  "Icon": "Icon.png",
+
+  "Api": "NetFramework",
+  "ApiVersion": 1,
+  "Entry": "Listary.FileAppPlugin.Explzh.dll"
+}
