@@ -32,7 +32,14 @@ namespace Listary.FileAppPlugin.Explzh
                 // It is from Explzh?
                 if (Win32Utils.GetProcessPathFromHwnd(hWnd).EndsWith("\\Explzh.exe", StringComparison.OrdinalIgnoreCase))
                 {
-                    return new ExplzhWindow(_host, hWnd);
+                    if (Win32Utils.GetClassName(Win32Utils.GetDlgItem(hWnd, 0x50C)) == "SysTabControl32")
+                    {
+                        return new ExplzhWindow(_host, hWnd);
+                    }
+                    else if (Win32Utils.GetDlgItem(hWnd, 0x4CE) != IntPtr.Zero)
+                    {
+                        return new ExplzhWindow(_host, hWnd);
+                    }
                 }
             }
             return null;
