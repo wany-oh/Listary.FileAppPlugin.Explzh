@@ -3,7 +3,7 @@
 
   "Id": "Explzh",
   "PluginType": "FileAppPlugin",
-  "PluginVersion": "0.1.0",
+  "PluginVersion": "0.2.0",
   "DisplayName": "Explzh",
   "Authors": [ "wany-oh" ],
   "Description": "Listary file application plugin for Explzh.",
